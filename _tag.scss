@@ -1,0 +1,26 @@
+@use "./variables" as *;
+
+.card__card-tag-list {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--hidden {
+    visibility: hidden;
+  }
+
+  .card__card-tag {
+    list-style-type: none;
+    font-size: 0.7rem;
+    background-color: $tag-color;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: $text-color;
+
+    &--active {
+      background-color: $tag-color-active;
+      color: $text-heading-color;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@use "./variables" as *;
+
+.card {
+  width: 25rem;
+  background-color: $card-color;
+
+  &:hover {
+    box-shadow: 5px 5px $tag-color-active;
+  }
+
+  &--border {
+    border: $card-border;
+  }
+
+  .card__card-img {
+    max-width: 100%;
+  }
+
+  .card__card-content {
+    height: 18rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .card__card-heading-flex {
+      display: flex;
+      justify-content: space-between;
+
+      .card__card-heading {
+        font-size: 1.8rem;
+      }
+    }
+
+    .card__card-text {
+      line-height: 26px;
+      color: $text-color;
+    }
+  }
+
+  .card__buttons-flex {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

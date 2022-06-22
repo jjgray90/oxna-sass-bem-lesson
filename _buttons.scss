@@ -1,0 +1,25 @@
+@use "./variables" as *;
+
+.card__button {
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: $primary-button-color;
+  color: white;
+
+  &:hover {
+    background-color: $card-color;
+    color: $text-heading-color;
+    border: 2px solid black;
+  }
+
+  &--secondary {
+    border: 2px solid black;
+    color: $text-heading-color;
+    background-color: white;
+
+    &:hover {
+      background-color: $primary-button-color;
+      color: white;
+    }
+  }
+}

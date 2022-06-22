@@ -1,0 +1,100 @@
+.card {
+  width: 25rem;
+  background-color: white;
+}
+.card:hover {
+  box-shadow: 5px 5px #00ffb2;
+}
+.card--border {
+  border: 2px solid #00ffb2;
+}
+.card .card__card-img {
+  max-width: 100%;
+}
+.card .card__card-content {
+  height: 18rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .card__card-content .card__card-heading-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.card .card__card-content .card__card-heading-flex .card__card-heading {
+  font-size: 1.8rem;
+}
+.card .card__card-content .card__card-text {
+  line-height: 26px;
+  color: grey;
+}
+.card .card__buttons-flex {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__button {
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+}
+.card__button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+.card__button--secondary {
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+}
+.card__button--secondary:hover {
+  background-color: black;
+  color: white;
+}
+
+.card__card-tag-list {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__card-tag-list--hidden {
+  visibility: hidden;
+}
+.card__card-tag-list .card__card-tag {
+  list-style-type: none;
+  font-size: 0.7rem;
+  background-color: lightgrey;
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: grey;
+}
+.card__card-tag-list .card__card-tag--active {
+  background-color: #00ffb2;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(215, 91, 91);
+}
+
+main {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
